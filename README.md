@@ -1,51 +1,89 @@
 # KSH Metter — AION 2
 
-Darmowa, eksperymentalna nakładka do AION 2 Global (Steam) na Windows 11 x64. Polski interfejs, angielskie nazwy umiejętności.
+Darmowa nakładka do **AION 2 Global (Steam)**. Sprawdzaj swój DPS, obrażenia poszczególnych umiejętności i wyniki drużyny bez wychodzenia z gry.
 
-## Pobieranie
+Polski interfejs · angielskie nazwy umiejętności · Windows 11 x64
 
-Instalatory będą dostępne w [Releases](https://github.com/Kashello/KSH-Metter-aion2/releases). Wersja 0.1.29 jest przygotowywana jako wydanie testowe.
+## Pobierz
 
-Repozytorium służy do udostępniania instalatorów i informacji dla użytkowników. Nie zawiera prywatnych nagrań sieciowych ani historii walk twórcy.
+**[Przejdź do pobierania →](https://github.com/Kashello/KSH-Metter-aion2/releases)**
 
-## Wymagania i uruchomienie
+Wybierz wydanie i pobierz plik kończący się na **Windows-x64-Setup.exe**. Nie potrzebujesz pobierać kodu źródłowego ani instalować narzędzi programistycznych.
 
-1. Pobierz i uruchom instalator Windows x64.
-2. Instalator pobierze brakujący Microsoft WebView2 — potrzebny jest internet.
-3. Zainstaluj osobno [Npcap z oficjalnej strony](https://npcap.com/#download). Npcap nie jest dołączony do pakietu.
-4. Uruchom KSH Metter. Ekran przygotowania sprawdzi wymagania i połączenie gry.
-5. Graj w AION 2 w trybie okienkowym bez ramek. Nicku, klasy i skilli nie wpisujesz ręcznie.
+## Wymagania
 
-Przy uruchomieniu metera podczas gry rozpoznanie postaci może wymagać użycia kilku różnych umiejętności i otrzymania potwierdzeń z serwera. Przy niejednoznacznych danych program czeka zamiast przypisywać cudze obrażenia.
+- Windows 11, wersja 64-bitowa.
+- AION 2 Global (Steam), uruchomiony w trybie okienkowym bez ramek.
+- [Npcap](https://npcap.com/#download) — składnik potrzebny do odczytu danych walki.
+- Microsoft WebView2 — jeśli go brakuje, instalator KSH Metter pobierze go podczas instalacji.
+- Internet do pobrania brakujących składników i aktualizacji katalogu umiejętności.
 
-## Funkcje i obsługa
+## Instalacja i pierwsza walka
 
-- Obrażenia i DPS, paski umiejętności, ikony i kolory.
-- Ranking potwierdzonych członków party; odczyt pozostaje eksperymentalny.
-- Ping i obsługiwane efekty kontroli postaci.
-- Alt+E odblokowuje przesuwanie nakładek za górną belkę; pozycje zapisują się automatycznie.
-- Ikona kota w zasobniku Windows udostępnia ustawienia, analizę i sprawdzanie gotowości.
-- Historia powstaje tylko po kliknięciu „Zapisz walkę”.
-- Opcjonalne źródło przeglądarkowe do OBS/Meld: włącz w trayu i skopiuj link.
+1. Pobierz instalator z sekcji [Releases](https://github.com/Kashello/KSH-Metter-aion2/releases) i uruchom go.
+2. Zainstaluj Npcap z [oficjalnej strony](https://npcap.com/#download). Jest instalowany osobno.
+3. Uruchom **KSH Metter** ze skrótu. Ekran przygotowania pokaże, czy wszystko jest gotowe.
+4. Uruchom grę w trybie okienkowym bez ramek i rozpocznij walkę.
+
+Nick, klasa i umiejętności są rozpoznawane automatycznie — niczego nie przypisujesz ręcznie. Jeśli uruchomisz meter już podczas gry, użyj kilku różnych umiejętności, aby mógł rozpoznać Twoją postać z danych walki.
+
+Panel DPS pojawia się po rozpoznaniu obrażeń i ukrywa się po zakończeniu walki.
+
+## Co zobaczysz w nakładce?
+
+- **DPS i łączne obrażenia**.
+- **Paski umiejętności** z nazwami, ikonami, obrażeniami i udziałem w wyniku.
+- **Ranking członków party**, których program rozpoznał w danych drużyny.
+- **Ping**.
+- **Obsługiwane efekty kontroli postaci**, np. ogłuszenie, z pozostałym czasem trwania.
+
+## Ustaw nakładki po swojemu
+
+Naciśnij **Alt+E** podczas gry, a następnie przeciągnij wybrany panel za jego górną belkę. Każdy panel ma osobne położenie, zapisywane automatycznie.
+
+Ponowne **Alt+E** lub przycisk **Gotowe** kończy ustawianie. Jeżeli skrót jest zajęty, program pokaże skrót zastępczy.
+
+## Ustawienia, analiza i historia
+
+Program działa pod **ikoną kota w zasobniku Windows**, obok zegara. Jeśli jej nie widać, sprawdź ukryte ikony pod strzałką.
+
+Kliknij ikonę prawym przyciskiem, aby otworzyć ustawienia, analizę, sprawdzenie gotowości lub zakończyć program.
+
+Historia walk zapisuje się tylko wtedy, gdy wybierzesz **Zapisz walkę**. Niezapisana walka może zostać zastąpiona następną i nie pozostaje po zamknięciu programu. Ustawienia i zapisane walki są przechowywane lokalnie na Twoim komputerze.
+
+## OBS i Meld Studio
+
+1. W menu ikony kota włącz **Źródło do streamu (OBS / Meld)**.
+2. Wybierz **Kopiuj link do OBS / Meld**.
+3. W programie do streamowania dodaj źródło **Przeglądarka / Browser** i wklej link.
+4. Umieść je nad obrazem gry i ustaw rozmiar odpowiadający rozdzielczości gry.
+
+Źródło pokazuje nakładki bez nagrywania całego pulpitu. Wystarczy ustawić je raz; zawartość i widoczność aktualizują się automatycznie.
 
 ## Aktualizacje
 
-**Program nie ma jeszcze automatycznej aktualizacji EXE.** Nowe wersje będą udostępniane w Releases; należy pobrać nowy instalator i uruchomić go ponownie.
+Nową wersję programu pobierzesz z [Releases](https://github.com/Kashello/KSH-Metter-aion2/releases). Zamknij KSH Metter z menu ikony kota, a następnie uruchom nowy instalator. **Obecna wersja nie aktualizuje programu automatycznie.**
 
-Katalog nazw i grafik skilli odświeża się automatycznie co 24 godziny i ma lokalny cache. Brak internetu lub grafiki nie blokuje liczenia obsługiwanych obrażeń. Nieznane ID nie jest zastępowane zgadywaną grafiką. Zmiany protokołu gry nadal mogą wymagać nowej wersji programu.
+Nazwy i ikony umiejętności są odświeżane automatycznie w tle. Jeśli katalog jeszcze nie zna nowego skilla, brak nazwy lub obrazka nie zatrzymuje liczenia obsługiwanych obrażeń.
 
-## Stan testów i ograniczenia
+## Gdy coś nie działa
 
-Instalację i uruchomienie potwierdził twórca na swoim komputerze. W Browserling potwierdzono wykrywanie braku Npcap i przycisk prowadzący na stronę pobierania. Nie jest to pełny test gry ani instalacji na czystym Windows 11 bez wszystkich zależności.
+| Problem | Co zrobić |
+| --- | --- |
+| Program informuje o braku Npcap | Użyj przycisku pobierania w aplikacji lub przejdź na [npcap.com](https://npcap.com/#download) i zainstaluj składnik. |
+| Nie widać DPS | Otwórz **Sprawdź gotowość** z menu ikony kota. Sprawdź połączenie i rozpoznanie postaci, a następnie użyj kilku różnych umiejętności podczas walki. |
+| Nie można przesuwać paneli | Włącz tryb ustawiania przez **Alt+E** i przeciągaj za górną belkę. |
+| Nakładki nie ma na streamie | Dodaj źródło przeglądarkowe według instrukcji powyżej. Samo przechwytywanie gry może nie obejmować nakładki. |
+| Brakuje ikonki skilla | Nie trzeba jej przypisywać ręcznie. Program korzysta z dostępnego katalogu i odświeża go w tle. |
 
-Parser jest częściowy. Nie potwierdzono pełnej dokładności wszystkich klas, dungeonów i walk party. Healing i Support nie mają gotowego odczytu live. Instalator 0.1.29 nie jest podpisany cyfrowo.
+W razie problemu zgłoś go w [Issues](https://github.com/Kashello/KSH-Metter-aion2/issues) lub na [Discordzie](https://discord.gg/YgpYQg45Mp). Podaj wersję programu, klasę postaci i krótki opis sytuacji; możesz dołączyć zrzut komunikatu.
 
-Program nie czyta pamięci gry, nie wstrzykuje kodu i nie obchodzi zabezpieczeń. Nie potwierdzono zgody wydawcy gry na jego używanie.
+## Wersja testowa
 
-## Licencje
+Odczyt walki jest eksperymentalny i wynik może być niepełny. **Healing i Support nie są obecnie obsługiwane.** Aktualizacje gry mogą wymagać nowej wersji metera.
 
-Kod własny jest objęty MIT; informacje licencyjne są dołączone do instalatora. Grafiki gry należą do NCSOFT lub właściwych właścicieli i nie są objęte MIT. Przed publiczną redystrybucją pakietu z tymi grafikami pozostaje ustalenie odpowiednich praw. Npcap ma osobną licencję, którą użytkownik akceptuje we własnym instalatorze.
+Instalator nie jest podpisany cyfrowo. KSH Metter jest niezależnym projektem, niepowiązanym z NCSOFT; nie gwarantuje zgodności z regulaminem gry. Grafiki gry należą do ich właścicieli, a Npcap ma osobną licencję. Informacje licencyjne są dołączone do instalatora.
 
-## Kashello
+---
 
 [kashello.pl](https://kashello.pl/) · [Twitch](https://www.twitch.tv/kashelloo) · [Discord](https://discord.gg/YgpYQg45Mp)
